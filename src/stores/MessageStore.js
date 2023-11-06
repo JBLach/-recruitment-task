@@ -50,7 +50,7 @@ export const useMessageStore = defineStore('messageStore', {
       } catch (error) {
         console.error(error);
         this.displayError('Wystąpił błąd przy wysyłaniu wiadomości.');
-        this.displayError(error.message);
+        // this.displayError(error.message);
         this.responseMessage = null;
       }
     }
